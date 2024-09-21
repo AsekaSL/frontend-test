@@ -11,3 +11,122 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.enter-button{
+  background-color: white;
+  font-size: 20px;
+  padding: 11px 33px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+.container{
+  margin: 30px 30px;
+}
+.id-container{
+  margin-bottom: 10px;
+}
+.id{
+  margin-right: 50px;
+}
+.container input{
+  border-width: 1.2px;
+  border-style: solid;
+  padding: 6px;
+  border-radius: 3px;
+  width: 220px;
+}
+.name-container{
+  margin-right: 23px;
+}
+.add-button{
+  margin-left: 228px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  background-color: white;
+  border: none;
+  background-color: rgb(0, 98, 255);
+  color: white;
+  font-size: 18px;
+  padding: 8px 25px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.12s;
+}
+.add-button:hover{
+  background-color: rgb(91, 147, 239);
+}
+.add-button:active{
+  background-color:rgb(0, 255, 68);
+}
+.title{
+  margin-left: 10px;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.Details-container{
+  max-width: 700px;
+  margin-left: 80px;
+}
+.cart-container{
+  font-size: 18px;
+  border-width: 0.5px;
+  border-color: rgba(0, 0, 0, 0.14);
+  border-style: solid;
+  display: grid;
+  grid-template-columns: 60px 260px 150px 150px;
+  padding: 30px 30px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  height: 50px;
+  vertical-align: center;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  background-color: rgba(234, 234, 234, 0.29);
+}
+.cart-container button{
+  font-size: 18px;
+  padding: 10px;
+  margin-right: 15px;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
+  width: 130px;
+}
+.update-button,
+.delete-button{
+  color: white;
+  font-weight: bold;
+  letter-spacing: 3px;
+  transition: background-color 0.25s, box-shadow 0.25s, margin-left 0.25, margin-top 0.25;
+}
+.update-button{
+  background-color: rgb(0, 255, 98);
+}
+.update-button:hover{
+  background-color: rgba(0, 255, 98, 0.647);
+}
+.update-button:active{
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+  margin-left: 4px;
+  margin-top: 4px;
+}
+.delete-button{
+  background-color: rgb(255, 0, 89);
+}
+.delete-button:hover{
+  background-color: rgba(255, 0, 89, 0.663);
+}
+.delete-button:active{
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+  margin-left: 4px;
+  margin-top: 4px;
+}
+.id-box,
+.name-box{
+  margin-top: 10px;
+}
