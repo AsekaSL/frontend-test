@@ -1,9 +1,19 @@
-import React,{useState} from 'react';
+import React,{useEffect, useState} from 'react';
 
-function UserForm() {
+function UserForm({addUser, isAdd, selectedUser, isEdit, updateUser}) {
 
     const [id, setId ] = useState(0);
     const [name, setName] = useState("");
+
+    useEffect(() => {
+        setId(0);
+        setName("");
+    }, [isAdd]);
+
+    useEffect(() => {
+        setId(selectedUser.id);
+        setName(selectedUser.name);
+    },[selectedUser])
 
     return(
         <div className="container">
@@ -20,8 +30,10 @@ function UserForm() {
                 </label>
                 <input type="text" placeholder="Enter Name" value={name} onChange={(e) => {setName(e.target.value)}}></input>
             </div>
-            <button className="add-button">
-                Add
+            <button className="add-button" onClick={() => isEdit ? updateUser({id, name}) : addUser({id, name})}>
+                {
+                    isEdit ? 'Update' : 'Add'
+                }
             </button>
         </div>
     );
